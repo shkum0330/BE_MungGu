@@ -2,8 +2,12 @@ package com.meong9.backend.global.batch.pension.scheduler;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.batch.core.*;
+import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobExecutionException;
+import org.springframework.batch.core.JobParameters;
+import org.springframework.batch.core.JobParametersBuilder;
 import org.springframework.batch.core.launch.JobLauncher;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.retry.annotation.Backoff;
 import org.springframework.retry.annotation.Retryable;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -22,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 public class TopPensionBatchLauncher {
 
     private final JobLauncher jobLauncher;
-
+    @Qualifier("aggregateTopPensionJob")
     private final Job aggregateTopPensionJob;
 
     @Retryable(

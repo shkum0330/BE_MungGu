@@ -41,10 +41,6 @@ dependencies {
 	// FFmpeg
 	implementation 'net.bramp.ffmpeg:ffmpeg:0.6.2'
 
-	// Kafka
-	implementation 'org.springframework.kafka:spring-kafka'
-	implementation 'org.apache.kafka:kafka-clients'
-
 	// Jooq
 	implementation 'org.jooq:jooq:3.18.0'
 	implementation 'org.jooq:jooq-meta:3.18.0'

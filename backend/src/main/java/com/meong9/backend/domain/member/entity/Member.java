@@ -61,7 +61,7 @@ public class Member extends BaseTimeEntity {
 
     @Column
     @Setter
-    private int badPostCount = 0;
+    private Integer badPostCount = 0;
 
     @Builder
     public Member (String email, String name, String provider, String providerId, MediaFile profileImage) {

@@ -2,7 +2,10 @@ package com.meong9.backend.global.auth.jwt;
 
 import com.meong9.backend.global.exception.AuthenticationException;
 import com.meong9.backend.global.utils.RoleCodeMapper;
-import io.jsonwebtoken.*;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtException;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;

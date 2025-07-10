@@ -1,9 +1,7 @@
 package com.meong9.backend.global.topFeature.entity;
 
-import com.meong9.backend.domain.pension.entity.Pension;
 import com.meong9.backend.domain.pension.entity.PensionFeature;
 import com.meong9.backend.domain.place.entity.PlaceFeature;
-import com.meong9.backend.global.utils.TagToFeatureMapping;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
